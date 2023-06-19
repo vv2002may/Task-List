@@ -25,6 +25,7 @@ addtask.addEventListener('click', function () {
    else {
       taskContainer.appendChild(task);
       inputTask.value = "";
+      // taskContainer.style.border='3px solid black'
    }
    let check = 'no';
    checkButton.addEventListener('click', function () {

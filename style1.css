@@ -2,25 +2,27 @@ body{
    display: flex;
    height: auto;
    justify-content: center;
-   background:black;
+   background:lightskyblue;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container{
    padding: 10px;
+   margin-top: 3rem;
 }
 .heading{
-padding-left: 13rem;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: rgb(86, 112, 112);
+text-align: center;
+font-family:chalkboard;
+color: black;
+font-size: 1.5rem;
 }
 #add-task-container{
-   background: black;
+   background: transparent;
    width: 500px;
    padding: 25px 20px;
-   box-shadow: 0 0 10rem green;
+   box-shadow: 0 0 2rem black;
    display: flex;
+   border-radius: .8rem;
    margin-bottom: 2rem;
-   border: solid green;
 }
 input{
    cursor:text;
@@ -50,24 +52,30 @@ input:hover{
    background-color: green;
    color: white;
 }
-
+#task-container{
+   width: 37rem;
+   margin-left: -2rem;
+   /* box-shadow: 0 0 3rem black; */
+   /* background: white; */
+   /* border-radius: 1rem; */
+}
 .task{
-   width:550px;
-   background-color: white;
+   width:35rem;
+   background-color: lightblue;
    border-radius: 10px;
    box-shadow: 0 0 1rem;
    padding: .4rem;
    margin-bottom: 2rem;
+   margin-left: .5rem;
+   margin-top: 1rem;
    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   /* word-wrap:break-word; */
 }
 li{
    font-size: 2rem;
    list-style: none; /* or display:flex; */
    flex: 4;
    padding: 1px;
+   overflow-wrap: anywhere;
    margin: 4px -1px;
 }
 .task button{
