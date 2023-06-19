@@ -1,0 +1,92 @@
+body{
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   background:linear-gradient(aqua,blue);
+}
+.container{
+   padding: 10px;
+}
+#add-task-container{
+   background: black;
+   width: 500px;
+   padding: 25px 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 2rem yellow;
+   display: flex;
+   margin-bottom: 2rem;
+   border: solid green;
+}
+input{
+   cursor:text;
+   flex: 5;
+   margin-right: 10px;
+   border-radius: 10px;
+   font-size: 1.2rem;
+   padding: 17px;
+   border: 2px solid green;
+}
+input:hover{
+   background-color: rgb(33, 64, 64);
+   color: white;
+   border-color: orange;
+}
+#add-task{
+   flex: .5;
+   font-size: 2rem;
+   border-radius: 10px;
+   background: #fff;
+   color: green;
+   border: 2px solid green;
+}
+#add-task:hover{
+   cursor:pointer;
+   background-color: green;
+   color: white;
+}
+
+.task{
+   width:100%;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 1rem;
+   padding: .4rem;
+   margin-bottom: 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+li{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 2rem;
+   list-style: none; /* or display:flex; */
+   flex: 4;
+   padding: 1px;
+   margin: 4px -1px;
+}
+.task button{
+   font-size: 2rem;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 10px;
+   background-color: white;
+   cursor: pointer;
+   margin: 3px;
+}
+.check-task{
+   color: orange;
+   border: 2px solid orange;
+}
+.check-task:hover{
+   background-color: orange;
+   color: #fff;
+}
+.delete-task{
+   color: red;
+   border: 2px solid red;
+}
+.delete-task:hover{
+   color: white;
+   background-color: red;
+}
